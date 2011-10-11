@@ -1,0 +1,327 @@
+body {
+	font-family:Verdana;
+	font-size:9pt;
+	padding:0;
+	margin:0;
+	background-position:0 400px;
+	width:1000px;
+	margin:0 auto;
+	background-color:#000;
+	color:#fff;
+	background-image:url(/images/bg.png);
+}
+
+a {
+	font-weight:bold;
+	color:#c00000;
+}
+	a:visited {
+		color:#c00000;
+	}
+	
+	a:hover {
+		color:#63b315;
+	}
+
+.clear {
+	clear:both;
+}
+
+	
+#content {
+}
+
+	#content #to_home {
+		font-size:120%;
+	}
+	
+#logo img {
+	border:none;
+}
+
+h1 {
+	font-size:300%;
+	margin:0;
+}
+	
+#photo_membres {
+	background-image:url(/images/pochette.jpg);
+	background-repeat:no-repeat;
+	height:595px;
+	width:925px;
+	position:relative;
+}
+
+	#photo_membres object {
+		float:right;
+		margin-bottom:70px;
+		clear:both;
+	}
+
+	#photo_membres img {
+		border:none;
+	}
+
+	#photo_membres .cadre {
+		position:absolute;
+		width:100px;
+		cursor:pointer;
+	}
+	
+	#photo_membres .border {
+		border:solid 3px #fff;
+	}
+
+
+	#photo_membres #cadre_dan {		
+		height:120px;
+		left:400px;
+		top:125px;
+	}
+	
+	
+	#photo_membres #cadre_dominic {		
+		height:100px;
+		left:80px;
+		top:105px;
+	}
+	
+	#photo_membres #cadre_alex {		
+		height:110px;
+		left:250px;
+		top:120px;
+	}
+	
+#membres {
+	margin-bottom:20px;
+}
+
+#pdv {
+	margin:0 0 2em 1em;
+	padding:0;
+}
+
+#social {
+}
+
+	#social a img {
+		border:none;
+	}
+	
+#endorsement {
+  text-align:center;
+}
+
+#footer {
+	margin:1em;
+	clear:both;
+}
+
+	#footer #left {
+		float:left;
+	}
+
+		#footer #left strong {
+			color:red;
+		}
+
+
+		#footer #left #good strong {
+			color:green;
+		}
+
+
+
+	#footer #right {
+		float:right;
+	}
+
+/* title */
+.title,
+.title_right {
+	float:left;
+	width:48%;
+}
+
+.title h2,
+.title_right h2 {
+	margin:1em 0 0.3em 0;
+	padding:0 0.2em;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:-2px;
+	font-size:14pt;
+	border-left:solid 10px #c00000;
+}
+
+.title_right {
+	float:right;
+	text-align:right;
+}
+
+	.title_right h2 {
+		border:none;
+		border-right:solid 10px #c00000;
+	}
+
+	
+
+/*** INDEX ***/
+#index .title {
+	width:48%;
+}
+
+#index #promo {
+	width:65%;
+	margin:1em auto;
+	border:solid 1px #fff;
+	padding:0.3em;
+}
+
+	#index #promo a {
+		font-size:120%;
+		color:#fff;
+	}
+
+#index #presentation {
+	clear:both;
+	margin:2em 0 0 0;
+	padding:0.5em;
+	border:solid 1px #000;
+	border-left:none;
+	border-right:none;
+	text-align:justify;
+}
+
+	#index #presentation p {
+		margin-top:0;
+		margin-bottom:1.2em;
+	}
+
+#index #calendrier {
+	width:80%;
+}
+
+	#index #calendar {
+		border-collapse:collapse;
+		border:solid 1px black;
+	}
+	
+		#index #calendar .odd {
+			background-color:#8a8a8a;
+		}
+
+		#index #calendar td {
+			padding:0.3em 1em;
+		}
+		
+#histo {
+	float:right;
+}
+
+	#histo .date {
+		font-weight:bold;
+		text-align:right;
+	}
+	
+	#histo td {
+		text-align:left;
+	}
+
+/*** MEMBERS ***/
+#members .member {
+	margin-top:2em;
+}
+
+	#members .member .mail {
+		margin-left:15px;
+	}
+
+	#members .member p {
+		width:80%;
+		float:left;
+		text-align:justify;
+	}
+
+	#members .member .img {
+		width:100px;
+		height:175px;
+		float:right;
+		padding:5px;
+		border:solid 1px #000;
+	}
+	
+	#members .member p,
+	#members .member .img {
+		margin-top:12px;
+	}
+	
+		#members #_dan .img {
+			background-image:url(http://farm4.static.flickr.com/3390/3509533843_2a57b5d31c_m.jpg);
+			background-position:-100px 0px;
+		}
+		
+		#members #_alex .img {
+			background-image:url(http://farm4.static.flickr.com/3661/3509532701_a20d7def8b_m.jpg);
+			background-position:-70px -15px;
+		}
+		
+		#members #_dominic .img {
+			background-image:url(http://farm4.static.flickr.com/3610/3510343644_74c54634a8.jpg);
+			background-position:-70px -120px;
+		}
+	
+#members .title {
+	width:80%;
+}
+
+
+/*** LEGAL ***/
+#legal #pochette {
+	border:solid 1px #000;
+	float:left;
+}
+
+#legal ol {
+	margin-right:1em;	
+	float:left;
+}
+
+	#legal ol li {
+		margin-bottom:0.3em;
+	}
+	
+/*** SHOW ***/
+#background {
+	background-color:#000;
+	text-align:right;
+}
+
+	#background img {		
+		
+	}
+	
+/*** TWITTER ***/
+#twitter_update_list {
+	padding:0;
+	list-style-position: inside;
+	list-style-type:square;
+}
+
+	#twitter_update_list li {
+		margin-bottom:1em;
+	}
+	
+
+/*** FLICKR ***/
+#photos {
+	width:100%!important;
+}
+
+	#photos #album {
+		margin-top:2em;
+	}
+
+	#photos img {
+		margin:0 1em;
+	}

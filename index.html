@@ -1,0 +1,128 @@
+---
+layout: main
+---
+<div id="photo_membres">
+	<div class="cadre" id="cadre_dominic"></div>
+	<div class="cadre" id="cadre_alex"></div>
+	<div class="cadre" id="cadre_dan"></div>	
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="100" ><param name="movie" value="http://bandcamp.com/EmbeddedPlayer.swf/album=963594476/size=grande/bgcol=000000/linkcol=C00000/"><param name="quality" value="high"><param name="allowScriptAccess" value="never"><param name="allowNetworking" value="always"><param name="bgcolor" value="#000000"><embed src="http://bandcamp.com/EmbeddedPlayer.swf/album=963594476/size=grande/bgcol=000000/linkcol=C00000/" width="300" height="100" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality=high allowScriptAccess=never allowNetworking=always bgcolor=#000000 ></embed><noembed><a href="http://lesmalleches.bandcamp.com/album/dans-le-garage">Workin' class by Les Mall&egrave;ch&eacute;s</a></noembed></object>
+	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="100" ><param name="movie" value="http://bandcamp.com/EmbeddedPlayer.swf/album=2634407075/size=grande/bgcol=000000/linkcol=C00000/" /><param name="quality" value="high" /><param name="allowScriptAccess" value="never" /><param name="allowNetworking" value="always" /><param name="bgcolor" value="#000000" /><embed src="http://bandcamp.com/EmbeddedPlayer.swf/album=2634407075/size=grande/bgcol=000000/linkcol=C00000/" width="300" height="100" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality=high allowScriptAccess=never allowNetworking=always bgcolor=#000000 ></embed><noembed><a href="http://m.lesmalleches.com/album/live-tr">Workin' class by Les Mall&egrave;ch&eacute;s</a></noembed></object>
+  <object width="320" height="265"><param name="movie" value="http://www.youtube.com/v/VCSHBr1SpJk&amp;hl=en_US&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/VCSHBr1SpJk&amp;hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="320" height="265"></embed></object>
+</div>
+<div id="membres">	
+	Les Mall&egrave;ch&eacute;s sont 
+	<%= link_to_member :dominic %>,
+	<%= link_to_member :alex %> et
+	<%= link_to_member :dan %>
+</div>
+<div class="title" id="calendrier">
+	<h2>Calendrier</h2>
+	<table id="calendar">
+	</table>
+</div>
+<div style="clear:both"></div>
+<div class="title">
+	<h2>Acheter l'album</h2>
+	<strong>Achetez les MP3</strong> au co&ucirc;t de 11,50$ 
+	<%= link_to "ici", "http://m.lesmalleches.com?action=download", 
+		:target => "_blank" %>!<br /><br />
+	<ul id="pdv">
+		<li><a href="http://lecolimacon.ca" target="_blank">Colima&ccedil;on</a>, 1522 Notre-Dame, Trois-Rivi&egrave;res</a></li>
+		<li><a href="http://www.tourismetroisrivieres.com/nous-joindre/information-touristique/index.aspx" target="_blank">Tourisme Trois-Rivi&egrave;res</a>, 1457 rue Notre-Dame, Trois-Rivi&egrave;res</a></li>
+		<li><a href="http://www.centredepiano.qc.ca/francais/Default.htm" target="_blank">Centre de Pianos</a>, 1003 rue St-Maurice, Trois-Rivi&egrave;res</a></li>
+	</ul>
+</div>
+<div class="title_right">
+	<h2>Nous engager</h2>
+	Il suffit de <%= mail_to "contact@lesmalleches.com", "nous contacter" %>.
+</div>
+
+<div class="clear"></div>
+
+<div class="title" id="links">
+	<h2>On parle de nous</h2>
+</div>
+<div class="clear"></div>
+
+<div class="title" id="photos">
+	<h2>Photos</h2>
+	<div id="album"></div>
+	<a id="show_all" href="javascript:void(0);">voir toutes les photos &gt;&gt;</a>
+</div>
+<div class="clear"></div>
+
+<div class="title">
+	<h2>Vid&eacute;os</h2>
+	<object width="480" height="385"><param name="movie" value="http://www.youtube.com/p/D7176D2DA347ABFD&amp;hl=en&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/p/D7176D2DA347ABFD&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" width="480" height="385" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+</div>
+<div class="title_right">
+	<h2>Historique</h2>
+	<table id="histo">
+		<tbody>
+			<tr>
+				<td class="date">Novembre 2006</td>
+				<td>Cr&eacute;ation du groupe</td>
+			</tr>
+			<tr>
+				<td class="date">Mai 2006</td>
+				<td>Premiers shows</td>
+			</tr>
+			<tr>
+				<td class="date">Avril 2008</td>
+				<td>Gagnant du concours de la rel&egrave;ve</td>
+			</tr>
+			<tr>
+				<td class="date">28 Juin 2009</td>
+				<td>Premi&egrave;re partie du groupe CCR</td>
+			</tr>
+			<tr>
+				<td class="date">28 septembre 2009</td>
+				<td>Lancement de l'album</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="clear"></div>
+
+
+<div id="presentation">
+	<p>
+	Un trio de rockabilly. Les Mall&egrave;ch&eacute;s se pr&eacute;sentent sous la plus simple expression de la formation de rock'n'roll. 
+	Compos&eacute; d'<%= link_to_member :alex %> 
+	&agrave; la guitare et &agrave; la voix, 
+	de <%= link_to_member :dominic %> &agrave; la contrebasse et de 
+	<%= link_to_member :dan %> &agrave; la batterie, ce trio vous am&egrave;ne avec 
+	lui dans son monde, celui des ann&eacute;es 50. Une &eacute;poque o&ugrave; le quotidien des artistes transpirait dans leurs chansons. On retrouvait les th&egrave;mes pr&eacute;occupant 
+	les jeunes de l'&eacute;poque : les relations amoureuses, les voitures et faire la fête.
+	</p>
+	<p>
+	Fid&egrave;les aux pr&eacute;occupations du quotidien, Les Mall&egrave;ch&eacute;s transmettent des valeurs et des id&eacute;es encr&eacute;es dans leurs vies de travailleurs. 
+	Les textes d'un niveau de langage populaire, traduisent une gamme de situations que tous et chacun peuvent s'approprier. 
+	Qu'elles parlent d'interrelations entre les patrons et les employ&eacute;s ou encore du plaisir de savoir que deux semaines de cong&eacute; arrivent bientôt, 
+	les chansons demeurent faciles d'acc&egrave;s pour tous.
+	</p>
+	<p>
+	Outre la partie de leur r&eacute;pertoire compos&eacute; de pi&egrave;ces originales francophones, Les Mall&egrave;ch&eacute;s rendent hommage &agrave; plusieurs de leurs h&eacute;ros. 
+	Il vous est possible d'entendre les Johnny Cash, Elvis Presley, Carl Perkins, Pinetop Perkins et bien d'autres pionniers du rock'n'roll.
+	<p>
+	<p>
+	C'est donc un spectacle sorti tout droit d'une salle de danse des ann&eacute;es 50 que Les Mall&egrave;ch&eacute;s vous proposent. 
+	De plus, l'&eacute;nergie contagieuse du groupe saura faire taper du pied même les plus r&eacute;calcitrants.
+	<p>
+</div>
+
+<script>
+	$(document).ready(index_load);
+	$(document).ready(highlight_index);
+	$(document).ready(links);
+</script>
+<script src="http://www.google.com/calendar/feeds/quknci5og8k6sle7nvjauicn2c@group.calendar.google.com/public/full?alt=json-in-script&callback=show_calendar&orderby=starttime&sortorder=ascending&futureevents=true&max-results=30">
+</script>
+<script type="text/javascript" src="http://del.icio.us/feeds/json/dan_sim/lesmalleches?count=20"></script>
+<div id="twitter_div">
+	<ul id="twitter_update_list"></ul>
+</div>
+</div>
+
+
+
