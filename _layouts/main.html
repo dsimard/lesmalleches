@@ -16,32 +16,25 @@
     <body id="index">
 		<div id="content">
 		  <img src="/images/logo.png" />
-			<%= link_to(image_tag("logo.png", :alt => "Les Mallèchés", :title => "Les Mallèchés"), {:action=>"index"}, :id=>"logo") %>
 			<span id="social">
-				<%= link_to(image_tag("facebook.png", :align => "abstop"), "http://www.facebook.com/group.php?gid=6965490933", :target => "_blank") %>
-				<%= link_to(image_tag("twitter.png", :align => "abstop"), "http://twitter.com/lesmalleches", :target => "_blank") %>
-				<%= link_to(image_tag("myspace.png", :align => "abstop"), "http://www.myspace.com/lesmalleches", :target => "_blank") %>
-				<%= mail_to("contact@lesmalleches.com", image_tag("email.png", :align => "abstop")) %>
+			  <a href="http://www.facebook.com/group.php?gid=6965490933" target = "_blank"><img src="/images/facebook.png"></a>
+			  <a href="mailto:contact@lesmalleches.com" target = "_blank"><img src="/images/email.png"></a>
 			</span>
 			{{content}}
 			<div id="endorsement">
-			  <%= link_to(image_tag("logo1.png", 
-			    :alt => "Custom Imprinted Guitar Picks by Clayton, Inc.", :align=> "absmiddle"),
-			    "http://www.steveclayton.com/", :target=>"_blank") %>
+			  <a href="http://www.steveclayton.com/" target="_blank"><img src="/images/logo1.png" alt="Custom Imprinted Guitar Picks by Clayton, Inc." align="absmiddle" /></a>
 			  <strong>Alex Mallèché</strong> utilise les picks de 
-			  <%= link_to "Steve Clayton, Inc.", "http://www.steveclayton.com/", 
-			    :target=>"_blank" %>
+			  <a href="http://www.steveclayton.com/">Steve Clayton, Inc.</a>
       </div>
 		</div>
 		<div id="footer">
 			<div id="left">
-				contactez-nous à <%= mail_to "contact@lesmalleches.com" %>
+				contactez-nous à <a href="mailto:contact@lesmalleches.com">contact@lesmalleches.com</a>
 			</div>
 			<div id="right">
-				réalisation web <%= link_to "Azanka", "http://www.azankatech.com", :target => "_blank" %>
-				&copy; <%= DateTime.now.strftime("%Y") %>
+  			&copy; 
+				réalisation web <a href="http://www.azanka.ca">Azanka</a>
 			</div>
-<% if RAILS_ENV == "production" %>
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -51,7 +44,8 @@
 	pageTracker._initData();
 	pageTracker._trackPageview();
 	</script>
-<% end %>
-<%= javascript_tag "$(document).ready(main_load);" %>
+  <script>
+    $(document).ready(main_load);
+  </script>
 	</body>
 </html>
