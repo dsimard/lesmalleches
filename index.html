@@ -21,27 +21,11 @@ layout: main
 	</table>
 </div>
 <div style="clear:both"></div>
-<div class="title">
-	<h2>Acheter l'album</h2>
-	<strong>Achetez les MP3</strong> au co&ucirc;t de 11,50$ 
-	<%= link_to "ici", "http://m.lesmalleches.com?action=download", 
-		:target => "_blank" %>!<br /><br />
-	<ul id="pdv">
-		<li><a href="http://lecolimacon.ca" target="_blank">Colima&ccedil;on</a>, 1522 Notre-Dame, Trois-Rivi&egrave;res</a></li>
-		<li><a href="http://www.tourismetroisrivieres.com/nous-joindre/information-touristique/index.aspx" target="_blank">Tourisme Trois-Rivi&egrave;res</a>, 1457 rue Notre-Dame, Trois-Rivi&egrave;res</a></li>
-		<li><a href="http://www.centredepiano.qc.ca/francais/Default.htm" target="_blank">Centre de Pianos</a>, 1003 rue St-Maurice, Trois-Rivi&egrave;res</a></li>
-	</ul>
-</div>
 <div class="title_right">
-	<h2>Nous engager</h2>
-	Il suffit de <%= mail_to "contact@lesmalleches.com", "nous contacter" %>.
+	<h2>Contact</h2>
+	Écrire à Dominic Mallèché à <a href="mail_to:dominic@lesmalleches.com">dominic@lesmalleches.com</a>.
 </div>
 
-<div class="clear"></div>
-
-<div class="title" id="links">
-	<h2>On parle de nous</h2>
-</div>
 <div class="clear"></div>
 
 <div class="title" id="photos">
@@ -56,31 +40,8 @@ layout: main
 	<object width="480" height="385"><param name="movie" value="http://www.youtube.com/p/D7176D2DA347ABFD&amp;hl=en&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/p/D7176D2DA347ABFD&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" width="480" height="385" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 </div>
 <div class="title_right">
-	<h2>Historique</h2>
-	<table id="histo">
-		<tbody>
-			<tr>
-				<td class="date">Novembre 2006</td>
-				<td>Cr&eacute;ation du groupe</td>
-			</tr>
-			<tr>
-				<td class="date">Mai 2006</td>
-				<td>Premiers shows</td>
-			</tr>
-			<tr>
-				<td class="date">Avril 2008</td>
-				<td>Gagnant du concours de la rel&egrave;ve</td>
-			</tr>
-			<tr>
-				<td class="date">28 Juin 2009</td>
-				<td>Premi&egrave;re partie du groupe CCR</td>
-			</tr>
-			<tr>
-				<td class="date">28 septembre 2009</td>
-				<td>Lancement de l'album</td>
-			</tr>
-		</tbody>
-	</table>
+	<h2>Dossier de presse</h2>
+    Voyez notre dossier de presse <a href="https://docs.google.com/a/lesmalleches.com/Doc?docid=0ASDSKp1H01BEZGhwNmY0NTVfNnRzNmh4NmRz&hl=fr_CA" target="_blank">ici</a>
 </div>
 <div class="clear"></div>
 
@@ -88,10 +49,10 @@ layout: main
 <div id="presentation">
 	<p>
 	Un trio de rockabilly. Les Mall&egrave;ch&eacute;s se pr&eacute;sentent sous la plus simple expression de la formation de rock'n'roll. 
-	Compos&eacute; d'<%= link_to_member :alex %> 
+	Compos&eacute; d'Alex Mallèché
 	&agrave; la guitare et &agrave; la voix, 
-	de <%= link_to_member :dominic %> &agrave; la contrebasse et de 
-	<%= link_to_member :dan %> &agrave; la batterie, ce trio vous am&egrave;ne avec 
+	de Dominic Mallèché &agrave; la contrebasse et de 
+	Bubu Mallèché &agrave; la batterie, ce trio vous am&egrave;ne avec 
 	lui dans son monde, celui des ann&eacute;es 50. Une &eacute;poque o&ugrave; le quotidien des artistes transpirait dans leurs chansons. On retrouvait les th&egrave;mes pr&eacute;occupant 
 	les jeunes de l'&eacute;poque : les relations amoureuses, les voitures et faire la fête.
 	</p>
@@ -103,7 +64,7 @@ layout: main
 	</p>
 	<p>
 	Outre la partie de leur r&eacute;pertoire compos&eacute; de pi&egrave;ces originales francophones, Les Mall&egrave;ch&eacute;s rendent hommage &agrave; plusieurs de leurs h&eacute;ros. 
-	Il vous est possible d'entendre les Johnny Cash, Elvis Presley, Carl Perkins, Pinetop Perkins et bien d'autres pionniers du rock'n'roll.
+	Il vous est possible d'entendre les Johnny Cash, Elvis Presley, Carl Perkins, Warren Smith et bien d'autres pionniers du rock'n'roll.
 	<p>
 	<p>
 	C'est donc un spectacle sorti tout droit d'une salle de danse des ann&eacute;es 50 que Les Mall&egrave;ch&eacute;s vous proposent. 
@@ -113,15 +74,9 @@ layout: main
 
 <script>
 	$(document).ready(index_load);
-	$(document).ready(highlight_index);
-	$(document).ready(links);
 </script>
 <script src="http://www.google.com/calendar/feeds/quknci5og8k6sle7nvjauicn2c@group.calendar.google.com/public/full?alt=json-in-script&callback=show_calendar&orderby=starttime&sortorder=ascending&futureevents=true&max-results=30">
 </script>
-<script type="text/javascript" src="http://del.icio.us/feeds/json/dan_sim/lesmalleches?count=20"></script>
-<div id="twitter_div">
-	<ul id="twitter_update_list"></ul>
-</div>
 </div>
 
 
