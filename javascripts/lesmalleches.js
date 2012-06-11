@@ -84,52 +84,6 @@ function show_calendar(root) {
 }
 
 function index_load() {
-	// Highlight name
-	var highlightName = function(params) {
-		var elem =params["element"];
-		if (params["cadre"]) {
-			var re = /cadre\_([a-z]+)/i;
-			var m = re.exec(params["cadre"].attr("id"))[1];
-			elem = $("#"+m);
-		}
-		
-		if (elem)
-			elem
-				.css({ backgroundColor:"yellow"})
-				.animate({ backgroundColor:"#000"}, 1000)
-	}
-
-	// Afficher l'encadré sur l'image
-	$(".cadre").hover(
-		function() {
-			$(this).toggleClass("border");
-			highlightName({cadre:$(this)});
-		},
-		function() {
-			$(this).toggleClass("border");
-		}
-	);
-	
-	// Afficher l'encadré à partir du lien
-	$("#membres a").hover(
-		function() {
-			$("#photo_membres #cadre_" + this.id).addClass("border");
-			highlightName({element:$(this)});
-		},
-		function() {
-			$("#photo_membres #cadre_" + this.id).removeClass("border");
-		}
-	);
-	
-	// Sur le clique, simuler un clique sur le lien
-	$(".cadre").click(
-		function() {
-			var re = /cadre\_([a-z]+)/i;
-			var m = re.exec(this.id)[1];
-			location = $("#membres a#" + m)[0].href;
-		}
-	);
-	
 	// Afficher 8 photos
 	showPhotos();
 	
